@@ -1,12 +1,17 @@
-# IMAGE-RECOGNITION
+# Image Recognition with YOLO
 
-# Introduction
-This code leverages YOLO (You Only Look Once), an object detection algorithm, to identify, count, and label objects in a video. By loading the YOLO model from the 'yolov8n.pt' file, the algorithm predicts objects in each video frame, draws bounding boxes around detected objects, and labels them with their respective class names. Additionally, it counts the instances of each class in every frame and displays this count, along with the class name, in a rectangle at the top left corner of the video output. The processed video is saved as 'output.mp4'.
+## Introduction
 
-# Requirements
-~ OpenCV
-~ YOLO
-~ Numpy
+This project utilizes YOLO (You Only Look Once), an advanced object detection algorithm, to identify, count, and label objects in a video. The YOLO model is loaded from the 'yolov8n.pt' file to make predictions on each frame of the input video. Detected objects are highlighted with bounding boxes and labeled with their class names. Additionally, the code counts the number of instances of each class in each frame and displays this count in a rectangle at the top left corner of the video output. The processed video is saved as 'output.mp4'.
 
-# Output
-The code outputs a video file, 'output.mp4', with objects labeled and counted.
+## Requirements
+
+Ensure you have the following libraries installed:
+
+- OpenCV
+- YOLO
+- Numpy
+
+You can install the required Python libraries using pip:
+```bash
+pip install opencv-python numpy
